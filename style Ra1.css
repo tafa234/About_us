@@ -1,0 +1,602 @@
+* {
+    margin: 0;
+}
+.body{
+    background-color:rgb(246, 245, 245);
+    margin: 0 ;
+    font-family: "Cabin",sans-serif;
+}
+/* header */
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 140%;
+}
+
+/* js  */
+header {
+    position: fixed; /* يجعل الـ header ثابت أعلى الصفحة */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* التأكد من ظهور الـ header أعلى العناصر الأخرى */
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+    background-color: transparent; 
+    display: flex;
+}
+header.scrolled {
+    background-color: #102039a6; /* خلفية نصف شفافة */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+}
+
+/* الحالة عندما نمر للأسفل */
+header.hide {
+    transform: translateY(-100%); /* نقل الـ header خارج الشاشة */
+}
+
+/* الحالة عند العودة للأعلى */
+header.show {
+    transform: translateY(0); /* إرجاع الـ header إلى مكانه */
+}
+/* /js */
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: 30px;  
+}
+header ul li{
+    margin-right: 30px;
+    transform: translateX(-10px);
+}
+header ul li a{
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+header ul li a:hover {
+    background-color: #102039;
+    color: #fff;;
+}
+
+.search input {
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    height: 30px;
+    padding: 0 10px;
+    box-shadow: 20px 8px 20px rgba(24, 42, 97, 0.75) ;
+    transform: translateY(70px);
+    margin-left: 50px;
+}
+
+.search button{
+    position: absolute;
+    left: 1410px;
+    height: 30px;
+    width: 60px;
+    border-radius:50px ;
+    background-color: #102039;
+    color: #fcfcfc;
+    border: none;
+    transform: translateY(70px);
+    }
+
+.search button:hover{
+    background-color:#3fd0d4;
+    background-image: url("magnifying-black.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    
+}
+.button{
+    transform: translateX(1128px);
+}
+/* landing page */
+/* js */
+.landing-page{
+    background-image: url(landing-page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    background-attachment: fixed;
+
+    position: relative; /* مهم لتحديد السياق للعناصر المضافة */
+}
+
+.overlay1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* تحديد العناصر في منتصف الشاشة */
+    color: white;
+    text-align: center;
+}
+/* js */
+
+.text-center{
+    background-color: rgba(0,0,0,0.4);
+    background-size: 1920px 1080px;
+    padding: 300px 0 135px 0;
+}
+
+.landing-title{
+    color:white;
+    font-size:70px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.landing-title2{
+    color:white;
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+    
+
+}
+/* first slide */
+.about-us {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+.container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-2{
+    font-size:large;
+    padding: 100px 0;
+}
+h4 {
+    color: #00bcd4;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact-link {
+    color: #00bcd4;
+    font-weight: bold;
+    padding:70px 0;
+}
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #555;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.images {
+    position: relative;
+    max-width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.para{
+    color: white;
+    font-size: larger;
+}
+
+/* Read More Button */
+.read-more-btn {
+    background-color: #00d1b2;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:background 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: #00a58d;
+}
+
+
+/* Read More Button */
+.read-more-btn {
+    background-color: #00d1b2;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.read-more-btn:hover {
+    background-color: #00a58d;
+}
+
+/* Offer Container Styles */
+.offer-container {
+    background: url('img صوره3.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-content {
+    display: flex;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Discount Section */
+.discount-text h1 {
+    font-size: 120px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+}
+
+.discount-text h1 span {
+    font-size: 60px;
+}
+
+/* Offer Details Section */
+.offer-details {
+    margin-left: 40px;
+}
+
+.offer-details h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #102039;
+}
+
+.offer-details h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #3fd0d4;
+}
+
+.offer-details p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* Read More Button */
+.read-more-btn {
+    background-color: #3fd0d4;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background-color: #00a58d
+}
+
+
+.container {
+    
+    padding: 20px;
+    background-color:#fff;
+    border-radius: 10px;
+    
+    position: relative;
+}
+
+/* 3 slide */
+.header-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    left: 10px;
+    /* top: -60px;  */
+}
+
+.italic-text {
+    font-size: 45px;
+    color: #102039;
+    padding: 40px;
+}
+
+/* .main-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #102039;
+    margin-bottom: 70px;
+    position: relative;
+    right: 30px;
+} */
+
+ 
+/* المحتوى */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000%;
+    margin: 50px auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.left-section, .right-section {
+    width: 25%;
+}
+
+.center-section {
+    width: 50%;
+    text-align: center;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 15px; /* مسافة بين الأيقونة والنص */
+}
+
+.feature i {
+    font-size: 32px;
+    color: #3fd0d4;
+}
+
+.text h2 {
+    font-size: 20px;
+    margin: bottom 20px;
+    color: #102039;
+}
+
+.text p {
+    font-size: 14px;
+    color: #666;
+}
+
+.travel-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+/* العناوين */
+.team-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 100px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.title {
+    color: #3fd0d4;
+    font-style:italic;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 100px;
+    margin-bottom: 50pxpx;
+}
+
+.subtitle {
+    color: #102039;
+    font-size: 36px;
+    margin-bottom: 100px;
+}
+
+/* تصميم حاوية الفريق */
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 170px;
+    
+}
+
+.team-member {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.team-member img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.1); /* تكبير الصورة عند التحريك */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.team-member:hover .overlay {
+    opacity: 1; /* إظهار الأيقونات عند التحريك */
+}
+
+.overlay h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.overlay p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 5px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #102039; /* لون الأيقونات عند التحريك */
+}
+
+.video{
+    margin-top: 110px;
+    margin-left: 100px;
+    width: 1300px;
+    object-fit: cover;
+    height: 700px;
+    background-color:  rgba(0, 0, 0, 0.3);
+    border-radius: 45px;
+    box-shadow: 5px 7px 10px 2px   rgb(177, 186, 189);  
+ }
+/* footer */
+.tiktok{
+    width:1.7%;
+    margin: 2px;    
+}
+
+.twitter{
+    width:1.7%;
+    margin: 2px;
+}
+
+.instagram{
+    width:1.7%;
+    margin: 2px;
+}
+
+.facebook{
+    width:1.7%;
+    margin: 2px;
+}
+
+.footer{
+    background-image: url(footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size:1920px 1080px;
+    background-position: center;
+    margin: 0;
+    width: 100%; 
+    clip-path: inset(20% 0 0 0); 
+    display: block;
+    overflow: hidden;
+    margin-top: auto;
+    flex: 1; 
+}
+
+.logo2{
+    transform: translateX(470px);
+    margin-bottom: 8%;
+    margin-top: 5%;
+    width: 35%;    
+}
+
+.content2{
+    background-color: rgba(0, 0, 0, 0.372);
+    background-size:1920px 1080px;
+    /* padding: 20px 0 70px ; */
+}
+
+.part1{
+    position: absolute;
+   margin-left: 6%;
+   list-style: none;
+   color: #fff;
+   transform: translateY(-300px);
+   font-family:"Caveat", cursive;
+   font-size: 130%;
+}
+
+.links1{
+    position: absolute;
+    transform: translateY(-300px);
+    margin-left: 77%;
+    color: #fff;
+    font-family:"Caveat", cursive;
+    font-size: 100%;
+}
+
+.links2{
+    position: absolute;
+    transform: translateY(-241px);
+    margin-left: 90%;
+    color: #fff;
+    font-family:"Caveat", cursive; 
+    font-size: 100%; 
+}
